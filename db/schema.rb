@@ -578,8 +578,8 @@ ActiveRecord::Schema.define(version: 20160905120856) do
     t.datetime "updated_at"
     t.integer  "parent_id"
     t.integer  "position",     default: 0
-    t.integer  "lft"
-    t.integer  "rgt"
+    t.integer  "lft",          default: 0
+    t.integer  "rgt",          default: 0
   end
 
   add_index "spree_properties", ["parent_id"], name: "index_properties_on_parent_id", using: :btree
